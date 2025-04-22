@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Prevent content from overflowing the viewport */
+    overflow-x: hidden;
+}
+
+#login,
+#main {
+    background: #fff;
+    padding: 20px;
+    /* Slightly reduce padding for smaller screens */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    /* Allow it to take up more horizontal space */
+    max-width: none;
+    /* Remove the fixed maximum width for better responsiveness */
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+    /* Adjust spacing for smaller screens */
+    color: #4a90e2;
+    font-size: 1.5em;
+    /* Slightly reduce font size */
+}
+
+input {
+    width: calc(100% - 24px);
+    /* Account for padding and border */
+    padding: 12px;
+    margin-bottom: 12px;
+    /* Adjust spacing */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the width */
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    /* Slightly increase padding for better touch targets */
+    margin: 8px 0;
+    /* Adjust margin */
+    font-size: 18px;
+    /* Slightly increase font size for better readability */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    /* Make buttons full width on mobile */
+    box-sizing: border-box;
+    /* Ensure padding is included in the width */
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+#send-success,
+#login-error {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Further adjustments for even smaller screens */
+@media (max-width: 800px) {
+    h2 {
+        font-size: 1.3em;
+    }
+
+    input {
+        font-size: 14px;
+        height: 10px;
+        width: 80%;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 16px;
+        height: 15px;
+        width: 80%;
+    }
+
+    #login,
+    #main {
+        width: 80%;
+        background-color: #357ABD;
+    }
+}

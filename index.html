@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <title>מערכת התחברות</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="login">
+        <h2>התחברות</h2>
+        <input id="username" placeholder="שם משתמש"><br>
+        <input id="password" type="password" placeholder="סיסמה"><br>
+        <button id="loginBtn">התחבר</button>
+        <div id="login-error" style="color:red"></div>
+    </div>
+
+    <div id="main" style="display:none">
+        <h2>שלח טקסט</h2>
+        <input id="textInput" placeholder="כתוב כאן"><br>
+        <button id="sendBtn">שלח</button>
+        <br><br>
+        <button class="send-btn" data-value="ok">ok</button>
+        <button class="send-btn" data-value="hi">hi</button>
+        <button class="send-btn" data-value="yes">yes</button>
+        <button class="send-btn" data-value="no">no</button>
+        <button class="send-btn" data-value="bye">bye</button>
+        <div id="send-success" style="color:green; margin-top:10px"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
