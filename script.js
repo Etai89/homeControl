@@ -1,4 +1,4 @@
-const apiUrl = 'http://13.60.223.47:1565'
+const apiUrl = 'https://api.remote.etai.co.il'
 
 $('#loginBtn').click(() => {
     const username = $('#username').val()
